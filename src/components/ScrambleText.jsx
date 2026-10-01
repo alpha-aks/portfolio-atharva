@@ -61,7 +61,7 @@ export default function ScrambleText({
         cancelAnimationFrame(animFrameRef.current);
       }
     };
-  }, [text, playAudio]);
+  }, [text]);
 
   return (
     <span className={`scramble-text-wrapper ${className} ${isDecrypting ? 'decrypting' : ''}`}>
